@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="游戏测试," />
 
 
 
@@ -87,16 +87,17 @@
 
 
 
-<meta name="description" content="交易模块向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。 1">
+<meta name="description" content="交易模块向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。">
+<meta name="keywords" content="游戏测试">
 <meta property="og:type" content="article">
 <meta property="og:title" content="游戏交易模块的测试">
 <meta property="og:url" content="http://yoursite.com/2015/05/25/paper1/index.html">
 <meta property="og:site_name" content="Kagami-blog">
-<meta property="og:description" content="交易模块向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。 1">
-<meta property="og:updated_time" content="2017-05-24T15:17:47.000Z">
+<meta property="og:description" content="交易模块向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。">
+<meta property="og:updated_time" content="2017-05-25T13:52:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="游戏交易模块的测试">
-<meta name="twitter:description" content="交易模块向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。 1">
+<meta name="twitter:description" content="交易模块向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。">
 
 
 
@@ -201,6 +202,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -217,6 +238,26 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -296,6 +337,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/测试/" itemprop="url" rel="index">
+                    <span itemprop="name">测试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -322,6 +385,7 @@
 
       
         <p><strong>交易模块</strong>向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。</p>
+<a id="more"></a>
 <h2 id="1-交易前"><a href="#1-交易前" class="headerlink" title="1.交易前"></a>1.交易前</h2><ul>
 <li>申请交易<ul>
 <li>申请人状态<ul>
@@ -446,6 +510,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/游戏测试/" rel="tag"># 游戏测试</a>
+          
+        </div>
+      
 
       
         
@@ -546,7 +616,25 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>
