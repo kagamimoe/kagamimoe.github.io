@@ -542,7 +542,19 @@
 <li>pwd – 显示当前目录</li>
 <li>mkdir dir – 创建目录 dir</li>
 <li>rm file – 删除 file</li>
-<li>rm -r dir – 删除目录 dir
+<li>rm -r dir – 删除目录 dir</li>
+<li>rm -f file – 强制删除 file</li>
+<li>rm -rf dir – 强制删除目录 dir *</li>
+<li>cp file1 file2 – 将 file1 复制到 file2</li>
+<li>cp -r dir1 dir2 – 将 dir1 复制到 dir2; 如果 dir2 不存在则创建它</li>
+<li>mv file1 file2 – 将 file1 重命名或移动到 file2; 如果 file2 是一个存在的目录则将 file1 移动到目录 file2 中</li>
+<li>ln -s file link – 创建 file 的符号连接 link</li>
+<li>touch file – 创建 file</li>
+<li>cat &gt; file – 将标准输入添加到 filemore file – 查看 file 的内容</li>
+<li>head file – 查看 file 的前 10 行</li>
+<li>tail file – 查看 file 的后 10 行</li>
+<li>tail -f file – 从后 10 行开始查看 file 的内容</li>
+</ul>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2015/09/15/paper3/#more" rel="contents">
@@ -1074,10 +1086,10 @@
             
             
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
