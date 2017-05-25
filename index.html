@@ -286,7 +286,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T11:51:53+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T22:50:36+08:00">
                 2017-05-24
               </time>
             
@@ -367,6 +367,683 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/09/15/paper3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kagami">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kagami-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/09/15/paper3/" itemprop="url">
+                  常用Linux命令小结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-09-15T20:39:48+08:00">
+                2015-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="文件命令"><a href="#文件命令" class="headerlink" title="文件命令"></a>文件命令</h2><p>–</p>
+<ul>
+<li>ls – 列出目录</li>
+<li>ls -al – 使用格式化列出隐藏文件</li>
+<li>cd dir - 更改目录到 </li>
+<li>dircd – 更改到 home 目录</li>
+<li>pwd – 显示当前目录</li>
+<li>mkdir dir – 创建目录 dir</li>
+<li>rm file – 删除 file</li>
+<li>rm -r dir – 删除目录 dir</li>
+<li>rm -f file – 强制删除 file</li>
+<li>rm -rf dir – 强制删除目录 dir *</li>
+<li>cp file1 file2 – 将 file1 复制到 file2</li>
+<li>cp -r dir1 dir2 – 将 dir1 复制到 dir2; 如果 dir2 不存在则创建它</li>
+<li>mv file1 file2 – 将 file1 重命名或移动到 file2; 如果 file2 是一个存在的目录则将 file1 移动到目录 file2 中</li>
+<li>ln -s file link – 创建 file 的符号连接 link</li>
+<li>touch file – 创建 file</li>
+<li>cat &gt; file – 将标准输入添加到 filemore file – 查看 file 的内容</li>
+<li>head file – 查看 file 的前 10 行</li>
+<li>tail file – 查看 file 的后 10 行</li>
+<li>tail -f file – 从后 10 行开始查看 file 的内容</li>
+</ul>
+<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><p>–</p>
+<ul>
+<li>ps – 显示当前的活动进程</li>
+<li>top – 显示所有正在运行的进程</li>
+<li>kill pid – 杀掉进程 id pid</li>
+<li>killall proc – 杀掉所有名为 proc 的进程</li>
+<li>*bg – 列出已停止或后台的作业</li>
+<li>fg – 将最近的作业带到前台</li>
+<li>fg n – 将作业 n 带到前台</li>
+</ul>
+<h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><p>–</p>
+<ul>
+<li>chmod octal file – 更改 file 的权限</li>
+<li>4 – 读 (r)2 – 写 (w)1 – 执行 (x)示例:</li>
+<li>chmod 777 – 为所有用户添加读、写、执行权限</li>
+<li>chmod 755 – 为所有者添加 rwx 权限, 为组和其他用户添加rx 权限</li>
+<li>更多选项参阅 man chmod.</li>
+</ul>
+<h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><p>–</p>
+<ul>
+<li>ssh user@host – 以 user 用户身份连接到 host</li>
+<li>ssh -p port user@host – 在端口 port 以 user 用户身份连接到 host</li>
+<li>ssh-copy-id user@host – 将密钥添加到 host 以实现无密码登录</li>
+</ul>
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><p>–</p>
+<ul>
+<li>grep pattern files – 搜索 files 中匹配 pattern 的内容grep -r pattern dir – 递归搜索 dir 中匹配 pattern 的内容</li>
+<li>command | grep pattern – 搜索 command 输出中匹配 pattern 的内容</li>
+</ul>
+<h2 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h2><p>–</p>
+<ul>
+<li>date – 显示当前日期和时间</li>
+<li>cal – 显示当月的日历</li>
+<li>uptime – 显示系统从开机到现在所运行的时间w – 显示登录的用户</li>
+<li>whoami – 查看你的当前用户名</li>
+<li>finger user – 显示 user 的相关信息</li>
+<li>uname -a – 显示内核信息</li>
+<li>cat /proc/cpuinfo – 查看 cpu 信息</li>
+<li>cat /proc/meminfo – 查看内存信息m</li>
+<li>an command – 显示 command 的说明手册</li>
+<li>df – 显示磁盘占用情况</li>
+<li>du – 显示目录空间占用情况</li>
+<li>free – 显示内存及交换区占用情况</li>
+</ul>
+<h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><hr>
+<ul>
+<li>tar cf file.tar files – 创建包含 files 的 tar 文件 file.tar</li>
+<li>tar xf file.tar – 从 file.tar 提取文件</li>
+<li>tar czf file.tar.gz files – 使用 Gzip 压缩创建 tar 文件</li>
+<li>tar xzf file.tar.gz – 使用 Gzip 提取 tar 文件</li>
+<li>tar cjf file.tar.bz2 – 使用 Bzip2 压缩创建 tar 文件</li>
+<li>tar xjf file.tar.bz2 – 使用 Bzip2 提取 tar 文件gzip file – 压缩 file 并重命名为 file.gzgzip -d file.gz – 将 file.gz 解压缩为 file网络</li>
+<li>ping host – ping host 并输出结果</li>
+<li>whois domain – 获取 domain 的 whois 信息dig domain – 获取 domain 的  DNS 信息dig -x host – 逆向查询 hostwget file – 下载 filewget -c file – 断点续传</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>–</p>
+<ul>
+<li>从源代码安装:./configuremake</li>
+<li>make install</li>
+<li>dpkg -i pkg.deb – 安装包 (Debian)rpm -Uvh pkg.rpm – 安装包 (RPM)</li>
+</ul>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>–</p>
+<ul>
+<li>Ctrl+C – 停止当前命令</li>
+<li>Ctrl+Z – 停止当前命令，并使用 fg 恢复</li>
+<li>Ctrl+D – 注销当前会话，与 exit 相似</li>
+<li>Ctrl+W – 删除当前行中的字</li>
+<li>Ctrl+U – 删除整行!! - 重复上次的命令</li>
+<li>exit – 注销当前会话</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/08/11/paper2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kagami">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kagami-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/08/11/paper2/" itemprop="url">
+                  python中 join和split的使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-08-11T22:39:48+08:00">
+                2015-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天学习codecademy的python课程的时候，遇到了join和split的使用。一开始不知道用，后来google了一下才知道。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">str.join(iterable): Return a string which is the concatenation of the strings in the iterable iterable. </div><div class="line">The separator between elements is the string providing this method.</div></pre></td></tr></table></figure>
+<p>简单的说，join就是在譬如list中，在每个元素之间加入特定的字符串让它们连接起来，然后返回字符串。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;li = ['My', 'name', 'is', 'kagami']</div><div class="line">&gt;&gt;&gt;print " ".join(li)</div><div class="line">My name is kagami</div><div class="line">&gt;&gt;&gt;print "+".join(li)</div><div class="line">My+name+is+kagami</div></pre></td></tr></table></figure>
+<p>split刚好相反，它是将字符串用特定字符串作为标志分隔成一个个元素，返回元素的list</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;li = &apos;My name is kagami&apos;</div><div class="line">&gt;&gt;&gt;print li.split(&quot; &quot;)</div><div class="line">[&apos;My&apos;, &apos;name&apos;, &apos;is&apos;, &apos;kagami&apos;]</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/05/25/paper1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kagami">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kagami-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/05/25/paper1/" itemprop="url">
+                  游戏交易模块的测试
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-25T22:39:48+08:00">
+                2015-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>交易模块</strong>向来是游戏众多功能模块中的重要功能，因为它直接关系到游戏的经济系统。笔者其实没有真正测试过交易模块，因为大部分页游和手游直接省去了交易模块，一方面是为了避免这个模块出问题，造成经济系统的崩溃（比如刷钱，刷装备等）；二是加剧单机化，也防止了一些玩家通过申请一大堆小号来刷钱刷装备。我参考了一般游戏里交易的流程，写了下大概的测试功能点和框架，如果有不对或者需要补充的地方，大家可以在下面提出。</p>
+<h2 id="1-交易前"><a href="#1-交易前" class="headerlink" title="1.交易前"></a>1.交易前</h2><ul>
+<li>申请交易<ul>
+<li>申请人状态<ul>
+<li>申请人在战斗中</li>
+<li>申请人在和他人交易中</li>
+<li>申请人在跑动中</li>
+<li>申请人发出交易后,继续对其他玩家发出交易请求;</li>
+<li>申请人发出交易后,继续对该玩家发出交易请求</li>
+</ul>
+</li>
+<li>申请人收到的回应<ul>
+<li>被交易人接受交易后,系统响应</li>
+<li>被交易人拒绝交易后,系统提示</li>
+<li>被交易人接受交易的同时,申请人飞走/传送/切换区域(大于交易距离限制)</li>
+<li>被交易人接受交易后,申请人下线</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到交易请求<ul>
+<li>被交易人状态<ul>
+<li>被交易人在战斗中</li>
+<li>被交易人在和其他玩家交易中</li>
+<li>被交易人和交易人不在同区域内/同地图内</li>
+<li>被交易人下线</li>
+<li>被交易人在挂机中</li>
+<li>被交易人跟交易人不是同一阵营/种族/服务器</li>
+</ul>
+</li>
+<li>被交易人收到请求后<ul>
+<li>接受请求后的响应</li>
+<li>拒绝请求后的响应</li>
+<li>不理会请求后的响应</li>
+<li>收到多个玩家的交易请求,能否接受多个请求</li>
+<li>收到请求后下线</li>
+<li>接受请求后下线</li>
+<li>先切换频道/切换区域(大于交易距离限制),再接受交易</li>
+<li>请求的样式相关</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-交易中"><a href="#2-交易中" class="headerlink" title="2.交易中"></a>2.交易中</h2><ul>
+<li>需要同步的信息是否正确<ul>
+<li>交易栏的信息,包括物品,金币,锁定信息等</li>
+</ul>
+</li>
+<li>交易栏中的物品<ul>
+<li>放入已绑定的物品</li>
+<li>放入不可交易的物品</li>
+<li>放入一般物品,可交易</li>
+<li>放入物品直到物品栏满,能否继续放入物品</li>
+<li>放入已绑定的物品</li>
+<li>放入若干金币/最大数量的金币</li>
+</ul>
+</li>
+<li>交易中玩家行为<ul>
+<li>一方玩家取消交易</li>
+<li>一方玩家下线/传送出区域</li>
+<li>一方玩家死亡/被攻击/移动出交易范围</li>
+<li>一方玩家掉线</li>
+<li>一方玩家做出其他行为,如向其他玩家发起交易/向NPC发起交易等等</li>
+<li>移动/取出交易栏中的物品</li>
+<li>快速放入/取出交易栏中的物品(有必要配置高延迟环境)</li>
+<li>点击锁定交易栏<ul>
+<li>锁定交易栏后下线/传送出区域/取消交易</li>
+<li>锁定交易栏后继续放入物品/金币</li>
+<li>锁定交易栏后,用任务管理器结束游戏</li>
+<li>锁定交易栏后点击取消锁定</li>
+<li>锁定交易栏后点击交易</li>
+</ul>
+</li>
+<li>其中一方玩家物品栏剩余空间不足<ul>
+<li>丢掉一些物品,空出空间后能否交易成功</li>
+<li>使用扩展背包道具,空出空间后能否交易成功</li>
+</ul>
+</li>
+<li>其中一方玩家金币已达上限,提示信息<ul>
+<li>丢掉一些金币,空出空间后能否交易成功</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-交易完成"><a href="#3-交易完成" class="headerlink" title="3.交易完成"></a>3.交易完成</h2><ul>
+<li>双方都锁定物品栏后,都点击交易按钮,交易成功<ul>
+<li>核对交易的物品和金币</li>
+<li>再次进行交易</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-其他异常情况"><a href="#4-其他异常情况" class="headerlink" title="4.其他异常情况"></a>4.其他异常情况</h2><ul>
+<li>高延迟</li>
+<li>回档刷装备/金币(暗黑3)</li>
+<li>..待续</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/05/24/haha/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kagami">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kagami-blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/05/24/haha/" itemprop="url">
+                  搬家啦
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-24T22:39:48+08:00">
+                2015-05-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="搬家啦"><a href="#搬家啦" class="headerlink" title="搬家啦"></a>搬家啦</h2><p>以前的博客正式迁移到github了，因为域名到期了 = = ，暂时没有闲钱续期。于是搬家到免费的github上了~ </p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -412,7 +1089,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
